@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"> </script>
+    <title>Document</title>
+</head>
+<body>
+  <form action="/logout" method="get">
+    <button class="logout" type="submit">logout</button>
+  </form>
+  <form class="form-data">
+    <table id="table">
+        <tr>
+          <th>Image</th>
+          <th>Title</th>
+          <th>Unique Plays</th>
+          <th>Total Plays</th>
+          <th>Completion Rate</th>
+        </tr>
+        <tr>
+          <td><img src="/images/tom1.png" alt="Sound 1 Thumbnail" height="80" width="80"></td>
+          <td>Sound 1</td>
+          <td><%= number %></td>
+          <td><%= w %></td>
+          <td>
+            <progress value="<%= w_rate %>" max="100"></progress>
+            <span><%= w_rate %>%</span>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="/images/tom2.png" alt="Sound 2 Thumbnail height="80" width="80""></td>
+          <td>Sound 2</td>
+          <td><%= number %></td>
+          <td><%= a %></td>
+          <td>
+            <progress value="<%= a_rate %>" max="100"></progress>
+            <span><%= a_rate %>%</span>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="/images/tom3.png" alt="Sound 3 Thumbnail height="80" width="80""></td>
+          <td>Sound 3</td>
+          <td><%= number %></td>
+          <td><%= s %></td>
+          <td>
+            <progress value="<%= s_rate %>" max="100"></progress>
+            <span><%= s_rate %>%</span>
+          </td>
+        <tr>
+          <td><img src="/images/tom4.png" alt="Sound 3 Thumbnail height="80" width="80""></td>
+          <td>Sound 4</td>
+          <td><%= number %></td>
+          <td><%= d %></td>
+          <td>
+            <progress value="<%= d_rate %>" max="100"></progress>
+            <span><%= d_rate %>%</span>
+          </td>
+        <tr>
+          <td><img src="/images/snare.png" alt="Sound 3 Thumbnail height="80" width="80""></td>
+          <td>Sound 5</td>
+          <td><%= number %></td>
+          <td><%= j %></td>
+          <td>
+            <progress value="<%= j_rate %>" max="100"></progress>
+            <span><%= j_rate %>%</span>
+          </td>
+        <tr>
+          <td><img src="/images/crash.png" alt="Sound 3 Thumbnail height="80" width="80""></td>
+          <td>Sound 6</td>
+          <td><%= number %></td>
+          <td><%= k %></td>
+          <td>
+            <progress value="<%= k_rate %>" max="100"></progress>
+            <span><%= k_rate %>%</span>
+          </td>
+        <tr>
+          <td><img src="/images/kick.png" alt="Sound 3 Thumbnail height="80" width="80""></td>
+          <td>Sound 7</td>
+          <td><%= number %></td>
+          <td><%= l %></td>
+          <td>
+            <progress value="<%= l_rate %>" max="100"></progress>
+            <span><%= l_rate %>%</span>
+          </td>
+        </tr>
+      </table>
+    </form>
+      <div class="container">
+        <canvas
+        id="myChart" aria-label="chart" role="img"></canvas>
+      </div>
+      <script src="graph.js"></script>
+</body>
+</html>
+
