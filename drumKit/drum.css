@@ -1,0 +1,50 @@
+#login-container {
+  width: 400px;
+  height: 500px;
+  margin: 50px auto;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px gray;
+}
+
+#login-form, #signup-form {
+  padding: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+#submit-button, #signup-button {
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  background-color: blue;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#submit-button:hover, #signup-button:hover {
+  background-color: darkblue;
+}
+
+#toggle-signup, #toggle-login {
+  text-align: right;
+  margin-top: 20px;
+}
+
+#toggle-signup a, #toggle-login a {
+  color: blue;
+  cursor: pointer;
+}

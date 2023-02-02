@@ -1,0 +1,28 @@
+/* body{
+    background-color: rgb(207, 178, 178);
+} */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(227, 229, 241, 0.541);
+    text-align: center;
+    border-width: 0;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+th {
+    background-color: rgb(150, 71, 71);
+}
+progress {
+    width: 100%;
+}
+
+.container{
+    max-width :400px;
+}
+
+.logout{
+    float: right;
+}
