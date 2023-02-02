@@ -1,0 +1,1 @@
+# nindra_technology
